@@ -60,8 +60,5 @@ const SmartGridModal = () => {
   );
 };
 
-// <Text>{`Scanned data: ${data || ''}`}</Text>
-
-
   render('pos.home.tile.render', () => <SmartGridTile />)
   render('pos.home.modal.render', () => <SmartGridModal />)
