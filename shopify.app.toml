@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "76377d7b0bd4f9586f68a1330581cbbf"
+name = "pos-customer-reader"
+handle = "pos-customer-reader"
+application_url = "https://enemies-slots-overview-each.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "nobu-checkout-extensibility2.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://enemies-slots-overview-each.trycloudflare.com/auth/callback",
+  "https://enemies-slots-overview-each.trycloudflare.com/auth/shopify/callback",
+  "https://enemies-slots-overview-each.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
