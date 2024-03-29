@@ -3,7 +3,7 @@
 client_id = "76377d7b0bd4f9586f68a1330581cbbf"
 name = "pos-customer-reader"
 handle = "pos-customer-reader"
-application_url = "https://enemies-slots-overview-each.trycloudflare.com"
+application_url = "https://murray-promising-exist-hungry.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://enemies-slots-overview-each.trycloudflare.com/auth/callback",
-  "https://enemies-slots-overview-each.trycloudflare.com/auth/shopify/callback",
-  "https://enemies-slots-overview-each.trycloudflare.com/api/auth/callback"
+  "https://murray-promising-exist-hungry.trycloudflare.com/auth/callback",
+  "https://murray-promising-exist-hungry.trycloudflare.com/auth/shopify/callback",
+  "https://murray-promising-exist-hungry.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]

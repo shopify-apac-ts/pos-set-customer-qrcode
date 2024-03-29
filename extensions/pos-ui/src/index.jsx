@@ -48,12 +48,16 @@ const SmartGridModal = () => {
     addCustomerToCart(data);
   }, [data]);
 
-  const scannedData = `${cart?.customer?.email || ''}`
+  const scannedData = `${cart?.customer?.email || ''}`;
+  const cameraProps = scannedData.length > 0 ?
+  { title: `Found: ${scannedData}`, variant: `confirmation`, visible: true }:
+  { title: 'Scanning', variant: `alert`, visible: true };
+
   return (
     <Navigator>
-      <Screen name="reader_screen" title={scannedData} >
+      <Screen name="reader_screen" title="Scan Customer ID" >
         <Stack direction="vertical" flexChildren flex={1}>
-          <CameraScanner />
+          <CameraScanner bannerProps={cameraProps}/>
         </Stack>
       </Screen>
     </Navigator>
