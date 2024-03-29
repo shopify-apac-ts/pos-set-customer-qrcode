@@ -39,7 +39,7 @@ const SmartGridModal = () => {
 
   // Use an effect to add the scanned product to the cart when data changes
   useEffect(() => {
-    // TODO: add logic to identify & associate customer
+    // Associate customer with cart
     const addCustomerToCart = (data) => {
       if (data) {
         api.cart.setCustomer({id: Number(data)});
